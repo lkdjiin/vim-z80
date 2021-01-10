@@ -1,15 +1,19 @@
 vim-z80
 =======
 
-Vim syntax for Z80 assembler.
+Vim syntax for Z80 assembler, specifically targeting the WLA-DX assembler.
 
 ## Installation Instructions
 Run the following commands to install Z80 syntax highlighting for the current user:
-````
-cd ~
-git clone https://github.com/samsaga2/vim-z80.git
-cd vim-z80
-cp -r ftdetect ftplugin syntax ~/.vim
-````
-#### Supported File Extensions
+
+    cd ~
+    git clone https://github.com/samsaga2/vim-z80.git
+    cd vim-z80
+    cp -r ftdetect ftplugin syntax ~/.vim
+
+### Supported File Extensions
 `*.z80`
+
+## Thanks
+
+Original work : https://github.com/samsaga2/vim-z80
