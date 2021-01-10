@@ -4,8 +4,8 @@ endif
 
 let b:loaded_ftplugin=1
 
-setlocal tabstop=8
-setlocal shiftwidth=8
+setlocal tabstop=4
+setlocal shiftwidth=4
 
 setlocal foldmethod=marker
 setlocal commentstring=;;%s
