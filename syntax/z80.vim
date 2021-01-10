@@ -48,13 +48,22 @@ syn keyword z80Reg af af' bc de hl ix ixh ixl iy iyh iyl
 syn keyword z80Reg sp a b c d e f h i l r
 
 " Directives
-syn keyword z80PreProc equ org map ds defs dw defw db defb module endmodule
-syn keyword z80PreProc include incbin macro endmacro repeat rept endrepeat endr
-syn keyword z80PreProc ifdef ifndef if else endif rotate defpage page echo error
+" syn keyword z80PreProc equ org map ds defs dw defw db defb module endmodule
+" syn keyword z80PreProc include incbin macro endmacro repeat rept endrepeat endr
+" syn keyword z80PreProc ifdef ifndef if else endif rotate defpage page echo error
 
-syn keyword z80PreProc .equ .org .map .ds .defs .dw .defw .db .defb .module .endmodule
-syn keyword z80PreProc .include .incbin .macro .endmacro .repeat .rept .endrepeat .endr
-syn keyword z80PreProc .ifdef .ifndef .if .else .endif .rotate .defpage .page .echo .error
+syn keyword z80PreProc .asc .asciitable
+syn keyword z80PreProc .bank
+syn keyword z80PreProc .db .define .dw
+syn keyword z80PreProc .enda .endme .endro
+syn keyword z80PreProc .incbin
+syn keyword z80PreProc .memorymap
+syn keyword z80PreProc .org
+syn keyword z80PreProc .rombankmap
+syn keyword z80PreProc .sdsctag
+" syn keyword z80PreProc .equ .org .map .ds .defs .dw .defw .db .defb .module .endmodule
+" syn keyword z80PreProc .include .incbin .macro .endmacro .repeat .rept .endrepeat .endr
+" syn keyword z80PreProc .ifdef .ifndef .if .else .endif .rotate .defpage .page .echo .error
 
 " Strings
 syn region z80String start=/"/ skip=/\\"/ end=/"/ oneline
@@ -62,7 +71,7 @@ syn region z80String start=/'/ end=/'/ oneline
 
 " Labels
 syn match z80Lbl "[A-Z_.?][A-Z_.?0-9]*:\="
-syn region z80Lbl2 start="(" end=")" oneline contains=z80Number,z80Lbl,z80Lbl2,z80Other
+" syn region z80Lbl2 start="(" end=")" oneline contains=z80Number,z80Lbl,z80Lbl2,z80Other
 
 " Operators
 syn match z80Other "[~+\-*/%^&=!<>]"
