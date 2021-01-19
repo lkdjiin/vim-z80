@@ -55,15 +55,12 @@ syn keyword z80Reg sp a b c d e f h i l r
 syn keyword z80PreProc .asc .asciitable
 syn keyword z80PreProc .bank
 syn keyword z80PreProc .db .def .define .dw
-syn keyword z80PreProc .enda .endme .endro .ends .equ
+syn keyword z80PreProc .enda .ende .endme .endro .ends .enum .equ
 syn keyword z80PreProc .incbin
 syn keyword z80PreProc .memorymap
 syn keyword z80PreProc .org
 syn keyword z80PreProc .rombankmap
 syn keyword z80PreProc .sdsctag .section
-" syn keyword z80PreProc .equ .org .map .ds .defs .dw .defw .db .defb .module .endmodule
-" syn keyword z80PreProc .include .incbin .macro .endmacro .repeat .rept .endrepeat .endr
-" syn keyword z80PreProc .ifdef .ifndef .if .else .endif .rotate .defpage .page .echo .error
 
 " Strings
 syn region z80String start=/"/ skip=/\\"/ end=/"/ oneline
