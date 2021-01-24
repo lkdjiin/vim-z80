@@ -56,7 +56,7 @@ syn keyword z80PreProc .asc .asciitable
 syn keyword z80PreProc .bank
 syn keyword z80PreProc .db .def .define .dw
 syn keyword z80PreProc .enda .ende .endme .endro .ends .enum .equ
-syn keyword z80PreProc .incbin
+syn keyword z80PreProc .incbin .incdir .include
 syn keyword z80PreProc .memorymap
 syn keyword z80PreProc .org
 syn keyword z80PreProc .rombankmap
