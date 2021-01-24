@@ -48,14 +48,12 @@ syn keyword z80Reg af af' bc de hl ix ixh ixl iy iyh iyl
 syn keyword z80Reg sp a b c d e f h i l r
 
 " Directives
-" syn keyword z80PreProc equ org map ds defs dw defw db defb module endmodule
-" syn keyword z80PreProc include incbin macro endmacro repeat rept endrepeat endr
-" syn keyword z80PreProc ifdef ifndef if else endif rotate defpage page echo error
+syn keyword z80PreProc export
 
 syn keyword z80PreProc .asc .asciitable
 syn keyword z80PreProc .bank
 syn keyword z80PreProc .db .def .define .dw
-syn keyword z80PreProc .enda .ende .endme .endro .ends .enum .equ
+syn keyword z80PreProc .enda .ende .endme .endro .ends .enum .equ .export
 syn keyword z80PreProc .incbin .incdir .include
 syn keyword z80PreProc .memorymap
 syn keyword z80PreProc .org
