@@ -53,12 +53,12 @@ syn keyword z80PreProc export
 syn keyword z80PreProc .asc .asciitable
 syn keyword z80PreProc .bank
 syn keyword z80PreProc .db .def .define .dw
-syn keyword z80PreProc .enda .ende .endme .endro .ends .enum .equ .export
+syn keyword z80PreProc .enda .ende .endme .endro .ends .endst .enum .equ .export
 syn keyword z80PreProc .incbin .incdir .include
 syn keyword z80PreProc .memorymap
 syn keyword z80PreProc .org
 syn keyword z80PreProc .rombankmap
-syn keyword z80PreProc .sdsctag .section
+syn keyword z80PreProc .sdsctag .section .struct
 
 " Strings
 syn region z80String start=/"/ skip=/\\"/ end=/"/ oneline
@@ -95,7 +95,7 @@ syn keyword	cTodo		contained TODO FIXME XXX
 " Comments
 syn match z80Comment ";.*$" contains=cTodo
 syn match z80Comment "^\*$"
-syn region z80Comment2 start="\<\.endasm\>" skip="\n" end="\<\.asm\>" keepend contains=z80Comment,z80Comment2 
+syn region z80Comment2 start="\<\.endasm\>" skip="\n" end="\<\.asm\>" keepend contains=z80Comment,z80Comment2
 syn region z80Comment start="\/\*" end="\*\/" contains=cTodo
 
 hi def link cTodo		Todo
