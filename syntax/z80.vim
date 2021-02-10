@@ -51,9 +51,9 @@ syn keyword z80Reg sp a b c d e f h i l r
 syn keyword z80PreProc export
 
 syn keyword z80PreProc .asc .asciitable
-syn keyword z80PreProc .bank
+syn keyword z80PreProc .bank .block
 syn keyword z80PreProc .db .def .define .dw
-syn keyword z80PreProc .enda .ende .endme .endro .ends .endst .enum .equ .export
+syn keyword z80PreProc .enda .endb .ende .endme .endro .ends .endst .enum .equ .export
 syn keyword z80PreProc .incbin .incdir .include
 syn keyword z80PreProc .memorymap
 syn keyword z80PreProc .org
